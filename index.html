@@ -7,56 +7,171 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+   <blockquote><i><del>Não</del> Me segue pois estou aprendendo! <sub>Alves, Erika</sub></i></blockquote>
+   <hr/>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+   <h2 id="indice">Índice</h2>
+      <ol>
+         <li><a href="#html" style="font-family:verdana">HTML <i>(HyperText Markup Language)</i></a></li>
+         <li><a href="#estrutura-basica" style="font-family:verdana">Estrutura básica do HTML</a></li>
+         <li><a href="#tags" style="font-family:verdana">Falando sobre Tags</a></li>
+         <li><a href="#atributos" style="font-family:verdana">Atributos de Tags</a></li>
+         <li><a href="#tipografia" style="font-family:verdana">Algumas Tags para texto (tipografia)</a></li>
+         <li><a href="#listas" style="font-family:verdana">Listas</a></li>
+         <li><a href="#links" style="font-family:verdana">Links</a></li>
+         <li><a href="#referencia" style="font-family:verdana">Referência</a></li>
+      </ol>
+   <hr/>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="html" style="font-family:verdana"><a href="#indice">1. HTML <i>(HyperText Markup Language)</i></a></h2>
+      <p>,<abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr><mark> não é linguagem de programação, mas sim de marcação.</mark> É um arquivo de texto que tem delimitadores (tags) que são interpretados pelos navegadores. Cada tag tem um nome e uma função, que reproduz um comportamento específico</p>
+   <hr/>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="estrutura-basica" style="font-family:verdana"><a href="#indice">2. Estrutura básica do HTML</a></h2>
+      <ul>
+         <li>É uma boa prática que a pasta principal do site seja denominada de <strong>index.html</strong></li>
+         <li>A maioria das tags precisam ser abertas (< >) e fechadas (< / >).</li>
+         <li>No corpo do editor devemos abrir e fechar a tag html. Ela vai indicar para o navegador onde nossa página começa e termina, além de indicar o que ele "vai ler".</li>
+         <li>Depois abrimos as tags <strong>head</strong> e <strong>body</strong>:</li>
+            <ul>
+               <li>no head colocamos as <strong>configurações de comportamento</strong></li>
+               <li>no body colocamos as informações <strong>que serão exibidas para os usuários</strong></li>
+            </ul>
+      </ul>
+      <p>Nosso arquivo ficou assim:</p>
+      <p>< html ></p>
+      <p>< head ></p>
+      <p>< /head ></p>
+      <p>< body ></p>
+      <p>< /body ></p>
+      <p>< /html ></p>
+   <hr/>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="tags" style="font-family:verdana"><a href="#indice">3. Falando sobre tags</a></h2>
+      <small>Aqui veremos alguns exemplos de tags</small>
+      
+      <p>Como dito antes, as tags que mudam o comportamento da página devem ser escritas no head. Um exemplo é a tag <strong>title</strong>, que muda o nome da aba do navegador</p>
+      <p>< title >Página principal< /title ></p>
+      
+      <p>As tags com conteúdo que será exibido para os usuários são escritas no body, como a <strong>i</strong> (deixa o texto itálico) e <strong>strong</strong> (deixa o texto em negrito). Essas tags podem ser usadas em conjunto, exemplo:</p>
+      <p>< strong > < i > Meu primeiro texto < /i > < /strong ></p>
+      <p>Fica assim:</p>
+      <p><strong><i>Meu primeiro texto</i></strong></p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <p>< strong > Meu primeiro < i > texto < /i > < /strong ></p>
+      <p>Fica assim:</p>
+      <p><strong>Meu primeiro <i>texto</i></strong></p>
+   <hr/>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="atributos" style="font-family:verdana"><a href="#indice">4. Atributos de tags</a></h2>
+      <p>Atributos são propriedades que algumas tags podem ter. Existem atributos <strong>genéricos</strong> e <strong>específicos</strong>.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+      <h4>Exemplo de atributos genéricos:</h4>
+      
+      <p><strong>id</strong> - é um identificador de elementos. O JavaScript tem o poder de ir no html, pegar um elemento específico e trocar o conteúdo dele. Pense assim, você tem vários parágrafos < p > mas quer mudar o conteúdo de 2 deles. Você atribui o mesmo id para nomeá-los e direcionar o JavaScript com base nesse id</p>
+      <p> < p id = "destaque" > O poder da programação < /p ></p>
 
+      <p><strong>class</strong> - faz o mesmo que o id, mas para o CSS</p>
+      <p>< p class = "paragrafo-para-destacar" > O poder da programação < /p ></p>
+
+      <p><strong>style</strong> - serve para colocar comandos de formatação do texto</p>
+      <p> < p style = "color:blue;" > O poder da programação < /p ></p>
+      <p>Fica assim:</p>
+      <p style="color:blue;"> O poder da programação</p>
+
+      <h4>Exemplo de atributos específicos:</h4>
+
+      <p><strong>input type = "_____"</strong> - ela adiciona a página uma caixa de texto. Já o type é um atributo específico da tag input, que aponta qual o tipo de conteúdo aquela caixa aceitará. Exemplo:
+      < input type = " number " > só aceitará número (lembrando que algumas letras podem ser aceitas por causa do algarismo romano)</p>
+      <input type="number">
+
+      <p><strong>img src = "_____"</strong> - img é uma tag para adicionar imagem. O caminho para vincular essa imagem é com o atributo src. Nele, podemos colocar uma imagem direta de outro site (colocando o endereço dela entre as aspas) ou subir a imagem para o projeto e colocando o caminho (nome da pasta + arquivo, por ex.) entre as aspas.</p>
+   <hr/>
+
+   <h2 id="tipografia" style="font-family:verdana"><a href="#indice">5. Algumas Tags para texto (tipografia)</a></h2>
+      <ul>
+         <li><strong>As tags h's</strong> - identificam os títulos. Vai de h1 até h6 e seu número é atribuído de acordo com sua relevância (onde h1 é atribuído ao título principal).</li>
+         <li><strong>< p ></strong> - tag para parágrafos. Usada para textos simples.</li>
+         <li><strong>< blockquote ></strong> - tag para citações. Essas tags destoa o texto da tag p, o que dá destaque ao que for escrito nela (que ainda pode ser editada com o CSS).</li>
+         <li><strong>< u ></strong> - deixa o que for escrito entre ela <u>sublinhada</u>.</li>
+         <li><strong>< small ></strong> - adiciona um texto pequeno no que for escrito entre ela.</li>
+         <li><strong>< mark ></strong> - deixa o que for escrito entre ela <mark>com o aspecto de marca texto</mark>.</li>
+         <li><strong>< hr ></strong> - adiciona uma linha onde é adicionada que ajuda a separar o conteúdo.</li>
+         <li><strong>< sup ></strong> - acrescenta um texto ou letra escrita na parte superior. Ex; Erika<sup>@</sup> (@ adicionado com a tag sup).</li>
+      </ul>
+   <hr/>
+
+   <h2 id="listas" style="font-family:verdana"><a href="#indice">6. Listas</a></h2>
+      <p>Existem 2 tipos de listas, <strong>ordenadas (< ol >)</strong> e <strong>não ordenadas (< ul >)</strong>. Essas são tags pai, que precisam de uma tag filho (nesse caso, < li >) para "funcionar". Elas são muito usadas pois, além de listas, podemos aplicá-las para criar menus no site (que também podem ser editadas em CSS).</p>
+      
+      <h4>Exemplo de ol</h4>
+         <p>< ol ></p>
+         <p>< li > Começo < /li ></p>
+         <p>< li > Meio < /li ></p>
+         <p>< li > Fim < /li ></p>
+         <p>< /ol ></p>
+         <p>No navegador, fica assim:</p>
+            <ol>
+               <li>Começo</li>
+               <li>Meio</li>
+               <li>Fim</li>
+            </ol>
+         <p>Nesse exemplo, a ordem é dada pelo número na frente dos fatores.</p>
+
+      <h4>Exemplo de ul</h4>
+         <p>< ul ></p>
+         <p>< li > Começo < /li ></p>
+         <p>< li > Meio < /li ></p>
+         <p>< li > Fim < /li ></p>
+         <p>< /ul ></p>
+         <p>No navegador, fica assim:</p>
+            <ul>
+               <li>Começo</li>
+               <li>Meio</li>
+               <li>Fim</li>
+            </ul>
+         <p>Nesse exemplo, os números são trocados por "pontos".</p>
+   <hr/>
+
+   <h2 id="links" style="font-family:verdana"><a href="#indice">7. Links</a></h2>
+      <p>Link vai além da url de um site. É também ligar uma página a outra dentro de um mesmo site. Exemplo:</p>
+      <p>< a href = "https://www.dio.me/" title = "Clique e confira" target = "_blank" > Dio.me< /a ></p>
+      <p>Vamos decifrar essa linha:</p>
+         <ul>
+            <li>A tag <strong>a</strong> vem de anchor (âncora). Ela faz exatamente isso, "ancora a página em um ponto" e, para ir para outro, você pode clicar em um link;</li>
+            <li>O <strong>href="_____"</strong> é onde colocamos o endereço para onde queremos encaminhar o usuário (no exemplo, o site da <i>DIO</i>);</li>
+            <li>O <strong>title</strong> adiciona um balão com o texto <i>"Clique e confira"</i> quando o usuário passar o mouse por cima do link;</li>
+            <li><strong>Target</strong> informa para o navegador se, ao clicar no link, a página vai se sobrepor a atual (<i>_self</i>) ou ser aberta em uma nova guia (<i>_blank</i>);</li>
+         </ul>
+      <p>Essa linha fica assim:</p>
+      <a href="https://www.dio.me/" title="Clique e confira" target="_blank"> Dio.me</a>
+
+      <p>Agora, pense em um site de uma empresa que tem várias páginas (Sobre, Contato, Inicial, Clientes,...) que, por ser interna, posso fazer o link de outra forma. No editor de códigos, cada página tem seu arquivo, que são denominados:</p>
+      <p>    about.html  -  contact.html  -  start.html  -  client.html</p>
+      <p>Para fazer o link é só adicionar ao < a href = "____" >. Ex:</p>
+      <p>< a href = "about.html" > Sobre< /a ></p>
+
+      <p>Outra situação é uma página única, com todo o conteúdo do site que, ao clicar no hiperlink nada será carregado mas a página descerá/subirá para o conteúdo. Exemplo:</p>
+      <p>< h1 > A história da internet < /h1 ></p>
+      <p>< h2 > Índice < /h2 ></p>
+      <p>< ul ></p>
+      <p>< li > < a href = "#surgimento" > Surgimento da internet < /a >< /li ></p>
+      <p>< li > < a href = "#como-funciona" > Como funciona o HTML? < /a >< /li ></p>
+      <p>< li > < a href = "#tags" > O que são TAGS? < /a >< /li ></p>
+      <p>< /ul ></p>
+      <p>< h2 id = "surgimento" > Surgimento da internet < /h2 ></p>
+      <p>< h2 id = "como-funciona" > Como funciona o HTML? < /h2 ></p>
+      <p>< h2 id = "tags" > O que são TAGS? < /h2 ></p>
+      <p>Ao colocar a # no href criei um id. Dentro dos textos em h2, coloquei novamente os id's para os quais o usuário será direcionado (posso fazer o mesmo no índice), ou adicionar uma opção voltar com um href para o início.</p>
+   <hr/>
+
+   <h2 id="referencia" style="font-family:verdana"><a href="#indice">8. Referência</a></h2>
+
+   <ul>
+      <li><a href="https://www.dio.me/" title="Clique e confira" target="_blank"> Dio.me</a></li>
+      <li><a href="https://www.w3schools.com/html/" title="Clique e confira" target="_blank"> W3Schools</a></li>
+      <li><a href="https://www.programaria.org/" title="Clique e confira" target="_blank"> Programaria</a></li>
+   </ul>
 </body>
 </html>
