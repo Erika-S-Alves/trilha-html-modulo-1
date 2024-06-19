@@ -11,7 +11,7 @@
    <blockquote><i><del>Não</del> Me segue pois estou aprendendo! <sub>Alves, Erika</sub></i></blockquote>
    <hr/>
 
-   <h2 id="indice">Índice</h2>
+   <h1 id="indice">Índice</h1>
       <ol>
          <li><a href="#html" style="font-family:verdana">HTML <i>(HyperText Markup Language)</i></a></li>
          <li><a href="#estrutura-basica" style="font-family:verdana">Estrutura básica do HTML</a></li>
@@ -22,10 +22,12 @@
          <li><a href="#links" style="font-family:verdana">Links</a></li>
          <li><a href="#referencia" style="font-family:verdana">Referência</a></li>
       </ol>
+      <br>
    <hr/>
 
    <h2 id="html" style="font-family:verdana"><a href="#indice">1. HTML <i>(HyperText Markup Language)</i></a></h2>
-      <p>,<abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr><mark> não é linguagem de programação, mas sim de marcação.</mark> É um arquivo de texto que tem delimitadores (tags) que são interpretados pelos navegadores. Cada tag tem um nome e uma função, que reproduz um comportamento específico</p>
+      <p><abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr><mark> não é linguagem de programação, mas sim de marcação.</mark> É um arquivo de texto que tem delimitadores (tags) que são interpretados pelos navegadores. Cada tag tem um nome e uma função, que reproduz um comportamento específico.</p>
+      <br>
    <hr/>
 
    <h2 id="estrutura-basica" style="font-family:verdana"><a href="#indice">2. Estrutura básica do HTML</a></h2>
@@ -46,22 +48,21 @@
       <p>< body ></p>
       <p>< /body ></p>
       <p>< /html ></p>
+      <br>
    <hr/>
 
    <h2 id="tags" style="font-family:verdana"><a href="#indice">3. Falando sobre tags</a></h2>
-      <small>Aqui veremos alguns exemplos de tags</small>
       
-      <p>Como dito antes, as tags que mudam o comportamento da página devem ser escritas no head. Um exemplo é a tag <strong>title</strong>, que muda o nome da aba do navegador</p>
-      <p>< title >Página principal< /title ></p>
+      <p>- Como dito antes, as tags que mudam o comportamento da página devem ser escritas no head. Um exemplo é a tag <strong>title</strong>, que muda o nome da aba do navegador:</p>
+      <p><i>< title >Página principal< /title ></i></p><br>
       
-      <p>As tags com conteúdo que será exibido para os usuários são escritas no body, como a <strong>i</strong> (deixa o texto itálico) e <strong>strong</strong> (deixa o texto em negrito). Essas tags podem ser usadas em conjunto, exemplo:</p>
-      <p>< strong > < i > Meu primeiro texto < /i > < /strong ></p>
-      <p>Fica assim:</p>
-      <p><strong><i>Meu primeiro texto</i></strong></p>
+      <p>- As tags com conteúdo que será exibido para os usuários são escritas no body, como a <strong>i</strong> (deixa o texto itálico) e <strong>strong</strong> (deixa o texto em negrito). Essas tags podem ser usadas em conjunto, exemplo:</p>
+      <p><i>< strong > < i > Meu primeiro texto < /i > < /strong ></i></p>
+      <p>Fica assim: <strong><i>Meu primeiro texto</i></strong></p><br>
 
-      <p>< strong > Meu primeiro < i > texto < /i > < /strong ></p>
-      <p>Fica assim:</p>
-      <p><strong>Meu primeiro <i>texto</i></strong></p>
+      <p><i>< strong > Meu primeiro < i > texto < /i > < /strong ></i></p>
+      <p>Fica assim: <strong>Meu primeiro <i>texto</i></strong></p>
+      <br>
    <hr/>
 
    <h2 id="atributos" style="font-family:verdana"><a href="#indice">4. Atributos de tags</a></h2>
@@ -69,24 +70,27 @@
 
       <h4>Exemplo de atributos genéricos:</h4>
       
-      <p><strong>id</strong> - é um identificador de elementos. O JavaScript tem o poder de ir no html, pegar um elemento específico e trocar o conteúdo dele. Pense assim, você tem vários parágrafos < p > mas quer mudar o conteúdo de 2 deles. Você atribui o mesmo id para nomeá-los e direcionar o JavaScript com base nesse id</p>
-      <p> < p id = "destaque" > O poder da programação < /p ></p>
+         <p><strong>ID</strong> - Identificador único: O atributo id deve ser usado quando você precisa identificar um elemento de forma única em um documento HTML.</p>
+         <p>Estilo específico: É útil quando você deseja aplicar estilos CSS específicos a um único elemento.</p>
+         <p>Manipulação via JavaScript: É comum usar id quando você precisa manipular um elemento específico com JavaScript.</p><br>
 
-      <p><strong>class</strong> - faz o mesmo que o id, mas para o CSS</p>
-      <p>< p class = "paragrafo-para-destacar" > O poder da programação < /p ></p>
+         <p><strong>Class</strong> - Reutilização de estilos: O atributo class é usado para agrupar elementos que compartilham estilos semelhantes.</p>
+         <p>Estilização em massa: Ideal para aplicar estilos a vários elementos com características comuns.</p>
+         <p>Manipulação via JavaScript: Pode ser usado para selecionar grupos de elementos para manipulação dinâmica com JavaScript.</p><br>
 
-      <p><strong>style</strong> - serve para colocar comandos de formatação do texto</p>
-      <p> < p style = "color:blue;" > O poder da programação < /p ></p>
-      <p>Fica assim:</p>
-      <p style="color:blue;"> O poder da programação</p>
+
+         <p><strong>Style</strong> - serve para colocar comandos de formatação do texto:</p>
+         <p> < p style = "color:blue;" > O poder da programação < /p ></p>
+         <p>Fica assim:</p>
+         <p style="color:blue;"> O poder da programação</p><br>
 
       <h4>Exemplo de atributos específicos:</h4>
 
-      <p><strong>input type = "_____"</strong> - ela adiciona a página uma caixa de texto. Já o type é um atributo específico da tag input, que aponta qual o tipo de conteúdo aquela caixa aceitará. Exemplo:
-      < input type = " number " > só aceitará número (lembrando que algumas letras podem ser aceitas por causa do algarismo romano)</p>
-      <input type="number">
+         <p><strong>Input type = "_____"</strong> - ela adiciona a página uma caixa de texto. Já o type é um atributo específico da tag input, que aponta qual o tipo de conteúdo aquela caixa aceitará. Exemplo:
+         < input type = " number " > só aceitará número (lembrando que algumas letras podem ser aceitas por causa do algarismo romano)</p>
+         <input type="number">
 
-      <p><strong>img src = "_____"</strong> - img é uma tag para adicionar imagem. O caminho para vincular essa imagem é com o atributo src. Nele, podemos colocar uma imagem direta de outro site (colocando o endereço dela entre as aspas) ou subir a imagem para o projeto e colocando o caminho (nome da pasta + arquivo, por ex.) entre as aspas.</p>
+      <p><strong>Img src = "_____"</strong> - img é uma tag para adicionar imagem. O caminho para vincular essa imagem é com o atributo src. Nele, podemos colocar uma imagem direta de outro site (colocando o endereço dela entre as aspas) ou subir a imagem para o projeto e colocando o caminho (nome da pasta + arquivo, por ex.) entre as aspas.</p><br>
    <hr/>
 
    <h2 id="tipografia" style="font-family:verdana"><a href="#indice">5. Algumas Tags para texto (tipografia)</a></h2>
@@ -98,7 +102,7 @@
          <li><strong>< small ></strong> - adiciona um texto pequeno no que for escrito entre ela.</li>
          <li><strong>< mark ></strong> - deixa o que for escrito entre ela <mark>com o aspecto de marca texto</mark>.</li>
          <li><strong>< hr ></strong> - adiciona uma linha onde é adicionada que ajuda a separar o conteúdo.</li>
-         <li><strong>< sup ></strong> - acrescenta um texto ou letra escrita na parte superior. Ex; Erika<sup>@</sup> (@ adicionado com a tag sup).</li>
+         <li><strong>< sup ></strong> - acrescenta um texto ou letra escrita na parte superior. Ex: Erika<sup>@</sup> (@ adicionado com a tag sup).</li><br>
       </ul>
    <hr/>
 
@@ -117,7 +121,7 @@
                <li>Meio</li>
                <li>Fim</li>
             </ol>
-         <p>Nesse exemplo, a ordem é dada pelo número na frente dos fatores.</p>
+         <p>Nesse exemplo, a ordem é dada pelo número na frente dos fatores.</p><br>
 
       <h4>Exemplo de ul</h4>
          <p>< ul ></p>
@@ -131,7 +135,7 @@
                <li>Meio</li>
                <li>Fim</li>
             </ul>
-         <p>Nesse exemplo, os números são trocados por "pontos".</p>
+         <p>Nesse exemplo, os números são trocados por "pontos" (marcadores).</p><br>
    <hr/>
 
    <h2 id="links" style="font-family:verdana"><a href="#indice">7. Links</a></h2>
@@ -163,7 +167,7 @@
       <p>< h2 id = "surgimento" > Surgimento da internet < /h2 ></p>
       <p>< h2 id = "como-funciona" > Como funciona o HTML? < /h2 ></p>
       <p>< h2 id = "tags" > O que são TAGS? < /h2 ></p>
-      <p>Ao colocar a # no href criei um id. Dentro dos textos em h2, coloquei novamente os id's para os quais o usuário será direcionado (posso fazer o mesmo no índice), ou adicionar uma opção voltar com um href para o início.</p>
+      <p>Ao colocar a # no href criei um id. Dentro dos textos em h2, coloquei novamente os id's para os quais o usuário será direcionado (posso fazer o mesmo no índice), ou adicionar uma opção voltar com um href para o início.</p><br>
    <hr/>
 
    <h2 id="referencia" style="font-family:verdana"><a href="#indice">8. Referência</a></h2>
